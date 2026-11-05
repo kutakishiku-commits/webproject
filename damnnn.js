@@ -6,8 +6,7 @@ function updateClock() {
       month: "short", day: "numeric",
       hour: "2-digit", minute: "2-digit", second: "2-digit"
     });
-}
-updateClock();
+  updateClock();
 setInterval(updateClock, 1000);
 document.getElementById("techSearch").addEventListener("input", (e) => {
   const q = e.target.value.toLowerCase();
@@ -15,3 +14,5 @@ document.getElementById("techSearch").addEventListener("input", (e) => {
     card.style.display = card.textContent.toLowerCase().includes(q) ? "" : "none";
   });
 });
+
+}
