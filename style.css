@@ -426,11 +426,10 @@ margin-bottom: 44px;
 /*текст градиент*/
 
 h1, h2, h3, h4, h5, h6 {
-  background: linear-gradient(180deg, #FFFFFF 0%, #A1A1AA 100%) !important;
-  -webkit-background-clip: text !important;
-  background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
-  color: transparent !important;
+  background: linear-gradient(180deg, #FFFFFF 0%, #A1A1AA 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
   display: inline-block;
 }
 /*мелочь*/
