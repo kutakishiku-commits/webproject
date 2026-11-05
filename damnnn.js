@@ -9,3 +9,9 @@ function updateClock() {
 }
 updateClock();
 setInterval(updateClock, 1000);
+document.getElementById("techSearch").addEventListener("input", (e) => {
+  const q = e.target.value.toLowerCase();
+  document.querySelectorAll(".tech-card").forEach(card => {
+    card.style.display = card.textContent.toLowerCase().includes(q) ? "" : "none";
+  });
+});
